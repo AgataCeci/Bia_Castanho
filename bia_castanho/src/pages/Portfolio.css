@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar{
+    display: flex;
+    position: fixed;
+    gap: 100px;
+    list-style: none;
+    margin: 0;
+    width: 100%;
+    padding: 20px;
+    filter: drop-shadow(8px 4px 49.7px rgba(0, 0, 0, 0.25));
+    background-color: white; 
+    align-items: center;
+    z-index: 10;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logotipoBiaMenu{
+    max-width: 500px;
+    max-height: 70px;
+}
+
+.logotipoBia{
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+.navbartitulo{
+    max-width: 181px;
+    max-height: 42px;
+
+    font-family: 'FONTSPRING DEMO - The Seasons';
+    text-decoration: underline;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26.5263px;
+    line-height: 32px;
+
+    color: #0D697E;
+
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navbartitulo:hover {
+    transform: scale(1.1);
+    color: #ECAA39;
+}
+
+section {
+  margin: 0;
+  padding-top: 150px;
+}
+
+.divlogotipo{
+  display: flex;
+  justify-content: center; 
+  margin: 35px;
+}
+
+.divtitulohome{
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    padding: 10px;
+
+    background: #ECAA39;
+}
+
+.titulohome{
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+
+    color: #4E4544;
+}
+
+.divseta{
+    display: flex;
+    justify-content: center; 
+    margin-top: 80px;
+}
+
+.divsinfos{
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.tituloespecialidades, .tituloetapas, .tituloabordagens{
+    font-family: 'FONTSPRING DEMO - The Seasons';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 88.291px;
+    line-height: 106px;
+}
+
+.tituloespecialidades{
+    color: #0D697E;
+}
+
+.tituloetapas{
+    color: #BB8831;
+}
+
+.tituloabordagens{
+    color: #563D11;
+}
+
+.divespecialidades{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 50%;
+}
+
+.tituloitemespecialidades, .tituloitemetapas, .tituloitemabordagens{
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    padding: 20px;
+}
+
+.tituloitemespecialidades{
+    color: #0D697E;
+}
+
+.tituloitemetapas{
+    color: #BB8831;
+}
+
+.tituloitemabordagens{
+    color: #563D11;
+}
+
+.divclicavel{
+    max-width: 1155.47px;
+    display: flex;
+    justify-content: center; 
+    padding: 10px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30.4px rgba(0, 0, 0, 0.25);
+    border-radius: 23px;
+
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.divclicavel:hover{
+    transform: scale(1.1);
+}
+
+.divclicada{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.95);
+    max-width: 1043px;
+    z-index: 1000;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30.4px rgba(0, 0, 0, 0.25);
+    border-radius: 23px;
+
+    display: flex;
+    justify-content: center; 
+    padding: 50px;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.divclicada.popup-ativa {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.divclicada.saindo {
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.95);
+}
+
+.tituloitemespecialidadesclicada, .tituloitemetapasclicada, .tituloitemabordagensclicada{
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 36px;
+}
+
+.tituloitemespecialidadesclicada{
+    color: #0D697E;
+}
+
+.tituloitemetapasclicada{
+    color: #BB8831;
+}
+
+.tituloitemabordagensclicada{
+    color: #563D11;
+}
+
+.divinfosespecialidades, .divinfosetapas, .divinfosabordagens{
+    max-width: 877px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    box-shadow: 0px 2.18391px 16.5977px rgba(0, 0, 0, 0.25);
+    border-radius: 12.5575px;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+.divinfosespecialidades{
+    background: #76C9EB;
+}
+
+.divinfosetapas{
+    background: #F3BA58;
+}
+
+.divinfosabordagens{
+    background: #CFB8B4;
+}
+
+.infosespecialidades{
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25.8586px;
+
+    color: #4E4544;
+}
+
+.overlay {
+  position: fixed;
+  top: 112px; /* altura da navbar */
+  left: 0;
+  width: 100%;
+  height: calc(100% - 80px); 
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999; /* abaixo do popup, acima do resto */
+}
+
+.divexperiencia{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.experiencia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.logo{
+    max-width: 59.11px;
+    max-height: 57.29px;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+}
+
+.tituloexperiencia{
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 40px;
+
+    color: #0D697E;
+}
+
+.infoexperiencia{
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+
+    color: #0D697E;
+}
+
+.flores{
+    width: 100%;
+    max-height: 700px;
+}
+
+.textocont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 40px;
+}
+
+.titulocontato{
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30.6086px;
+    line-height: 38px;
+    text-align: center;
+
+    color: #0E4957;
+}
+
+.titulocontato2{
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 150px;
+    line-height: 38px;
+    text-align: center;
+
+    color: #0E4957;
+}
+
+.contatocont{
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    gap: 80px;
+}
+
+.cont{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.linkcontconteiner{
+    background-color: #0D697E;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.linkcont{
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 22px;
+    line-height: 24px;
+    margin-left: 60px;
+    z-index: 0;
+
+    color: #FFFFFF;
+}
+
+.redes{
+    max-width: 80px;
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    transform: translateY(-50%);
+    height: auto;
+}
+
+.fotos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.divfotoendereco{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    gap: 20px;
+}
+
+.divfotobia{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.bia{
+  width: 50%; /* ou um valor fixo, tipo 200px */
+  object-fit: cover;
+}
+
+.titulofotos{
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34.8394px;
+    line-height: 44px;
+
+    color: #0E4957;
+}
+
+.descfotos{
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25.3086px;
+    line-height: 32px;
+
+    color: #0E4957;
+}
+
+.divtextofotobia{
+  width: 50%; /* mesmo valor da imagem */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 1500px) {
+    .navbar{
+        display: none;
+    }
+    .titulohome{
+        font-size: 20px;
+    }
+    .navbar {
+        gap: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 15px;
+    }
+
+  .logotipoBiaMenu {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 300px;
+  }
+
+  .tituloespecialidades, .tituloetapas, .tituloabordagens {
+    font-size: 60px;
+    line-height: 70px;
+    text-align: center;
+  }
+
+  .divespecialidades {
+    width: 80%;
+  }
+
+  .tituloitemespecialidades, .tituloitemetapas, .tituloitemabordagens {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .tituloitemespecialidadesclicada, .tituloitemetapasclicada, .tituloitemabordagensclicada {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .divfotoendereco {
+    width: 80%;
+  }
+
+  .divfotobia {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bia, .divtextofotobia {
+    width: 100%;
+  }
+
+  .titulofotos, .descfotos {
+    text-align: center;
+  }
+
+  .titulocontato2{
+    font-size: 90px;
+  }
+
+  .contatocont{
+    flex-direction: column;
+    align-items: center;
+  }
+}
