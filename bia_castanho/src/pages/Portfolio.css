@@ -4,20 +4,41 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
+
 .navbar{
     display: flex;
-    position: fixed;
-    gap: 100px;
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
     list-style: none;
     margin: 0;
     width: 100%;
     padding: 20px;
+    gap: 100px;
     filter: drop-shadow(8px 4px 49.7px rgba(0, 0, 0, 0.25));
     background-color: white; 
     align-items: center;
-    z-index: 10;
-    flex-wrap: wrap;
-    justify-content: center;
+    z-index: 1001;
+    justify-content: center; 
+    scrollbar-width: thin; 
+    position: fixed;
+    top: 0;
+}
+
+.navbar::-webkit-scrollbar {
+    height: 6px;
 }
 
 .logotipoBiaMenu{
@@ -51,6 +72,10 @@ html {
     color: #ECAA39;
 }
 
+.home{
+    padding-top: 0px;
+}
+
 section {
   margin: 0;
   padding-top: 150px;
@@ -59,7 +84,7 @@ section {
 .divlogotipo{
   display: flex;
   justify-content: center; 
-  margin: 35px;
+  margin-top: 150px;
 }
 
 .divtitulohome{
@@ -118,7 +143,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    width: 50%;
+    width: 70%;
 }
 
 .tituloitemespecialidades, .tituloitemetapas, .tituloitemabordagens{
@@ -128,6 +153,7 @@ section {
     font-size: 32px;
     line-height: 40px;
     padding: 20px;
+    text-align: center;
 }
 
 .tituloitemespecialidades{
@@ -159,37 +185,37 @@ section {
     transform: scale(1.1);
 }
 
-.divclicada{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.95);
-    max-width: 1043px;
-    z-index: 1000;
+.divclicada {
+  position: relative; /* não é mais fixed */
+  max-width: 1043px;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 30.4px rgba(0, 0, 0, 0.25);
+  border-radius: 23px;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  z-index: 1000;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 
-    background: #FFFFFF;
-    box-shadow: 0px 4px 30.4px rgba(0, 0, 0, 0.25);
-    border-radius: 23px;
+  /* para rolar internamente se necessário */
+  max-height: 90vh;
+  overflow-y: auto;
 
-    display: flex;
-    justify-content: center; 
-    padding: 50px;
-
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .divclicada.popup-ativa {
   opacity: 1;
   pointer-events: auto;
-  transform: translate(-50%, -50%) scale(1);
+  transform: scale(1);
 }
 
 .divclicada.saindo {
   opacity: 0;
   pointer-events: none;
-  transform: translate(-50%, -50%) scale(0.95);
+  transform: scale(0.95);
 }
 
 .tituloitemespecialidadesclicada, .tituloitemetapasclicada, .tituloitemabordagensclicada{
@@ -246,12 +272,17 @@ section {
 
 .overlay {
   position: fixed;
-  top: 112px; /* altura da navbar */
+  top: 0;
   left: 0;
-  width: 100%;
-  height: calc(100% - 80px); 
+  width: 100vw;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 999; /* abaixo do popup, acima do resto */
+  z-index: 998;
+  overflow-y: auto;
+  padding: 50px 20px; /* espaço para respiro em cima e dos lados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .divexperiencia{
@@ -421,75 +452,148 @@ section {
 }
 
 .divtextofotobia{
-  width: 50%; /* mesmo valor da imagem */
+  width: 50%; 
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-@media (max-width: 1500px) {
+@media only screen and (max-width: 1600px) {
     .navbar{
-        display: none;
+        justify-content: flex-start; 
     }
+
     .titulohome{
         font-size: 20px;
     }
-    .navbar {
-        gap: 40px;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 15px;
+
+    .divfotobia{
+        flex-direction: column;
+        width: 100%;
     }
 
-  .logotipoBiaMenu {
-    margin-left: 0;
-    margin-right: 0;
-    max-width: 300px;
-  }
+    .bia{
+        width: 100%; 
+    }
 
-  .tituloespecialidades, .tituloetapas, .tituloabordagens {
-    font-size: 60px;
-    line-height: 70px;
-    text-align: center;
-  }
+    .divtextofotobia{
+        width: 100%;
+        height: 1000px;
+    }
 
-  .divespecialidades {
-    width: 80%;
-  }
+    .titulocontato2{
+        font-size: 100px;
+    }
 
-  .tituloitemespecialidades, .tituloitemetapas, .tituloitemabordagens {
-    font-size: 24px;
-    text-align: center;
-  }
+    
+    .contatocont{
+        flex-direction: column;
+        align-items: center;
+    }
 
-  .tituloitemespecialidadesclicada, .tituloitemetapasclicada, .tituloitemabordagensclicada {
-    font-size: 28px;
-    text-align: center;
-  }
+}
 
-  .divfotoendereco {
-    width: 80%;
-  }
+@media only screen and (max-width: 700px) {
+    .logotipoBiaMenu{
+        max-width: 190px;
+    }
 
-  .divfotobia {
-    flex-direction: column;
-    align-items: center;
-  }
+    .navbartitulo{
+        font-size: 15px;
+    }
 
-  .bia, .divtextofotobia {
-    width: 100%;
-  }
+    .navbar{
+        gap: 20px;
+        padding: 10px;
+        overflow-x: auto;
+        max-height: none;
+    }
 
-  .titulofotos, .descfotos {
-    text-align: center;
-  }
+    .logohome{
+        max-width: 250px;
+        margin-top: 80px;
+    }
 
-  .titulocontato2{
-    font-size: 90px;
-  }
+    .divlogotipo{
+        margin: 0px;
+    }
 
-  .contatocont{
-    flex-direction: column;
-    align-items: center;
-  }
+    .divseta{
+        margin: 40px;
+    }
+
+    section {
+        padding-top: 20px;
+    }
+
+    .titulohome{
+        font-size: 9px;
+    }
+
+    .imgseta{
+        max-width: 40px;
+    }
+
+    .tituloespecialidades, .tituloetapas, .tituloabordagens{
+        font-size: 35px;
+    }
+
+    .tituloitemabordagens, .tituloitemetapas, .tituloitemespecialidades{
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .divclicavel{
+            width: 100%;
+    }
+
+    .divexperiencia{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .titulocontato{
+        font-size: 20px;
+    }
+
+    .titulocontato2{
+        font-size: 40px;
+    }
+
+    .linkcont{
+        font-size: 10px;
+    }
+
+    .titulofotos{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .descfotos{
+        font-size: 10px;
+    }
+
+    .divfotoendereco{
+        width: 100%;
+    }
+
+    .tituloexperiencia{
+        font-size: 20px;
+    }
+
+    .infoexperiencia{
+        font-size: 10px;
+    }
+
+    .tituloitemespecialidadesclicada, .tituloitemetapasclicada, .tituloitemabordagensclicada{
+        font-size: 20px;
+    }
+
+    .infosespecialidades{
+        font-size: 10px;
+    }
+
+    .divclicada {
+        width: 100%;
+    }
 }

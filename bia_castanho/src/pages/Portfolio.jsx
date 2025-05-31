@@ -58,7 +58,7 @@ export default function Portfolio (){
 
     return (
         <>
-            <div>
+            <div className='body'>
                 <nav>
                     <ul  className='navbar'>
                         <li><a href="#home"><img src={logotipoBiaMenu} className='logotipoBiaMenu'/></a></li>
@@ -70,15 +70,15 @@ export default function Portfolio (){
                     </ul>
                 </nav>
                 {popupAberto && <div className="overlay"></div>}
-                <section id='home'>
+                <section id='home' className='home'>
                     <div className='divlogotipo'>
-                        <img src={logotipoBia}/>
+                        <img src={logotipoBia} className='logohome'/>
                     </div>
                     <div className='divtitulohome'>
                         <label className='titulohome'>AMPLA EXPERIÊNCIA PROFISSIONAL E QUALIFICAÇÃO ACADÊMICA</label>
                     </div>
                     <div className='divseta'>
-                        <a href="#especialidades"><img src={seta}/></a>
+                        <a href="#especialidades"><img src={seta} className='imgseta'/></a>
                     </div>
                 </section>
 
