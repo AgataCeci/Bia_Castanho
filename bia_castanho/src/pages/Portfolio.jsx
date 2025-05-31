@@ -98,9 +98,9 @@ export default function Portfolio (){
                                 <div>
                                     <label className='tituloitemespecialidadesclicada'>Dificuldades na aprendizagem</label>
                                     <div className='divinfosespecialidades'>
-                                        <label className='infosespecialidades'>Dificuldades, transtornos ou até problemas de aprendizagem são desordens que dificultam o ritmo de aprendizado de uma pessoa. 
+                                        <label className='infosespecialidades'>"Dificuldades, transtornos ou até problemas de aprendizagem são desordens que dificultam o ritmo de aprendizado de uma pessoa. 
                                         </label> 
-                                        <label className='infosespecialidades'>Esses problemas são detectados a partir dos cinco anos de idade e necessitam de acompanhamento de psicopedagogos, psicólogos, fonoaudiólogos e em alguns casos outros profissionais.
+                                        <label className='infosespecialidades'>Esses problemas são detectados a partir dos cinco anos de idade e necessitam de acompanhamento de psicopedagogos, psicólogos, fonoaudiólogos e em alguns casos outros profissionais."
                                         </label>
                                     </div>
                                     </div>
@@ -115,9 +115,9 @@ export default function Portfolio (){
                             <div ref={popupRef} className={`divclicada 
                             ${popupAnimando ? 'popup-ativa' : ''} 
                             ${popupFechando ? 'saindo' : ''}`}>                                    <div>
-                                    <label className='tituloitemespecialidadesclicada'>Dificuldades na leitura e escrita</label>
+                                    <label className='tituloitemespecialidadesclicada'>"Dificuldades na leitura e escrita</label>
                                     <div className='divinfosespecialidades'>
-                                        <label className='infosespecialidades'>É uma incapacidade específica de aprendizagem caracterizada por dificuldades para se alfabetizar, entender o que lê, problemas para memorizar as palavras, regras ortográficas e conceitos, dispersão, falta de atenção, dificuldades em escrever de forma legível e sem erros ortográficos.
+                                        <label className='infosespecialidades'>"É uma incapacidade específica de aprendizagem caracterizada por dificuldades para se alfabetizar, entender o que lê, problemas para memorizar as palavras, regras ortográficas e conceitos, dispersão, falta de atenção, dificuldades em escrever de forma legível e sem erros ortográficos."
                                         </label> 
                                     </div>
                                     </div>
@@ -134,12 +134,16 @@ export default function Portfolio (){
                             ${popupFechando ? 'saindo' : ''}`}>                                    <div>
                                     <label className='tituloitemespecialidadesclicada'>Dificuldades no raciocínio lógico-matemático </label>
                                     <div className='divinfosespecialidades'>
-                                        <label className='infosespecialidades'> Dificuldade em fazer operações matemáticas e processos cognitivos afetados como: Velocidade de processamento de informação, memória de trabalho, memória em tarefas não verbais, memórias de curto e longo prazo, memória sequencial auditiva, habilidades visuo-espacias, habilidades psicomotoras e táteis.
+                                        <label className='infosespecialidades'>"Dificuldade em fazer operações matemáticas e processos cognitivos afetados como: Velocidade de processamento de informação, memória de trabalho, memória em tarefas não verbais, memórias de curto e longo prazo, memória sequencial auditiva, habilidades visuo-espacias, habilidades psicomotoras e táteis."
                                         </label> 
                                     </div>
                                     </div>
                                 </div>
                             )}
+
+                            <div className='divclicavel'>
+                                <label  className='tituloitemespecialidades'>Estimulação cognitiva de idosos</label>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -159,7 +163,7 @@ export default function Portfolio (){
                             ${popupFechando ? 'saindo' : ''}`}>                                    <div>
                                     <label className='tituloitemetapasclicada'>Avaliação diegnóstica</label>
                                     <div className='divinfosetapas'>
-                                        <label className='infosespecialidades'>Com base no conhecimento e funcionamento cerebral e sua repercussão cognitiva, através do diagnóstico psicopedagógico podemos mapear o nível de aquisição das competências mentais necessárias ao processamento dos conteúdos escolares.
+                                        <label className='infosespecialidades'>"Com base no conhecimento e funcionamento cerebral e sua repercussão cognitiva, através do diagnóstico psicopedagógico podemos mapear o nível de aquisição das competências mentais necessárias ao processamento dos conteúdos escolares."
                                         </label> 
                                     </div>
                                     </div>
@@ -176,7 +180,7 @@ export default function Portfolio (){
                             ${popupFechando ? 'saindo' : ''}`}>                                    <div>
                                     <label className='tituloitemetapasclicada'>Prevenção</label>
                                     <div className='divinfosetapas'>
-                                        <label className='infosespecialidades'>Ao tratar algumas dificuldades e transtornos de aprendizagem, podemos evitar o aparecimento de outros problemas. A ação preventiva do trabalho psicopedagógico é baseada na estimulação e orientação do processo ensino-aprendizagem, com o objetivo de favorecer a apropriação do conhecimento no aprendente ao longo de sua evolução. 
+                                        <label className='infosespecialidades'>"Ao tratar algumas dificuldades e transtornos de aprendizagem, podemos evitar o aparecimento de outros problemas. A ação preventiva do trabalho psicopedagógico é baseada na estimulação e orientação do processo ensino-aprendizagem, com o objetivo de favorecer a apropriação do conhecimento no aprendente ao longo de sua evolução."
                                         </label> 
                                     </div>
                                     </div>
@@ -193,7 +197,7 @@ export default function Portfolio (){
                             ${popupFechando ? 'saindo' : ''}`}>                                    <div>
                                     <label className='tituloitemetapasclicada'>Intervenção</label>
                                     <div className='divinfosetapas'>
-                                        <label className='infosespecialidades'>A intervenção psicopedagógica acontece após as sessões avaliativas onde foram encontradas hipóteses de causas das falhas na aprendizagem. Diante desses resultados o psicopedagogo elabora um plano de intervenção e inicia uma terapia da aprendizafem com propostas educativas de forma a estimular as áreas cerebrais que necessitam de intervenção.
+                                        <label className='infosespecialidades'>"A intervenção psicopedagógica acontece após as sessões avaliativas onde foram encontradas hipóteses de causas das falhas na aprendizagem. Diante desses resultados o psicopedagogo elabora um plano de intervenção e inicia uma terapia da aprendizafem com propostas educativas de forma a estimular as áreas cerebrais que necessitam de intervenção."
                                         </label>
                                     </div>
                                     </div>
@@ -208,51 +212,17 @@ export default function Portfolio (){
                         <div className='divespecialidades'>
                             <label className='tituloabordagens'>Abordagens</label>
 
-                            <div className='divclicavel' onClick={() => setPopupAberto('trans')}>
-                                <label className='tituloitemabordagens'>Psicologia transpessoal</label>
-                            </div>
-                            
-                            {popupAberto === 'trans' && (
-                            <div ref={popupRef} className={`divclicada 
-                            ${popupAnimando ? 'popup-ativa' : ''} 
-                            ${popupFechando ? 'saindo' : ''}`}>                                    <div>
-                                    <label className='tituloitemabordagensclicada'>Psicologia transpessoal</label>
-                                    <div className='divinfosabordagens'>
-                                        <label className='infosespecialidades'>Nossa metodologia se baseia na abordagem transdisciplinar holística e se diferencia pelo processo do Cuidado Integral. Essa abordagem alia o método analítico ao sintético, orientando-se por uma cartografia vasta e inclusiva da totalidade humana, na tarefa de desenvolver uma Terapia da Inteireza que alia o pré-pessoal ao pessoal e ao transpessoal.
-                                        </label> 
-                                    </div>
-                                    </div>
-                                </div>
-                            )}
-
-                            <div className='divclicavel' onClick={() => setPopupAberto('aee')}>
-                                <label  className='tituloitemabordagens'>Atendimento Educacional Especializado</label>
-                            </div>
-                            
-                            {popupAberto === 'aee' && (
-                            <div ref={popupRef} className={`divclicada 
-                            ${popupAnimando ? 'popup-ativa' : ''} 
-                            ${popupFechando ? 'saindo' : ''}`}>                                    <div>
-                                    <label className='tituloitemabordagensclicada'>Atendimento Educacional Especializado</label>
-                                    <div className='divinfosabordagens'>
-                                        <label className='infosespecialidades'>O AEE é um serviço que identifica, elabora e organiza recursos pedagógicos e de acessibilidade para eliminar as barreiras para a plena participação dos alunos. 
-                                        </label> 
-                                    </div>
-                                    </div>
-                                </div>
-                            )}
-
                             <div className='divclicavel' onClick={() => setPopupAberto('psicopedagogo')}>
-                                <label  className='tituloitemabordagens'>Psicopedagogo</label>
+                                <label  className='tituloitemabordagens'>Psicopedagoga</label>
                             </div>
                             
                             {popupAberto === 'psicopedagogo' && (
                             <div ref={popupRef} className={`divclicada 
                             ${popupAnimando ? 'popup-ativa' : ''} 
                             ${popupFechando ? 'saindo' : ''}`}>                                    <div>
-                                    <label className='tituloitemabordagensclicada'>Psicopedagogo</label>
+                                    <label className='tituloitemabordagensclicada'>Psicopedagoga</label>
                                     <div className='divinfosabordagens'>
-                                        <label className='infosespecialidades'>Psicopedagogo analisa e intervém em processos de ensino-aprendizagem, com o objetivo de otimizar o aprendizado. 
+                                        <label className='infosespecialidades'>"Psicopedagogo analisa e intervém em processos de ensino-aprendizagem, com o objetivo de otimizar o aprendizado. 
                                         </label> 
                                         <label className='infosespecialidades'> Principais atividades:
                                         </label>
@@ -274,12 +244,48 @@ export default function Portfolio (){
                                         </label>
                                         <label className='infosespecialidades'> Identificar problemas e propor soluções
                                         </label>
-                                        <label className='infosespecialidades'> Áreas de atuação Escolas, Clínicas, Empresas.
+                                        <label className='infosespecialidades'> Áreas de atuação Escolas, Clínicas, Empresas."
                                         </label>
                                     </div>
                                     </div>
                                 </div>
                             )}
+
+                            <div className='divclicavel' onClick={() => setPopupAberto('trans')}>
+                                <label className='tituloitemabordagens'>Psicologia transpessoal</label>
+                            </div>
+                            
+                            {popupAberto === 'trans' && (
+                            <div ref={popupRef} className={`divclicada 
+                            ${popupAnimando ? 'popup-ativa' : ''} 
+                            ${popupFechando ? 'saindo' : ''}`}>                                    <div>
+                                    <label className='tituloitemabordagensclicada'>Psicologia transpessoal</label>
+                                    <div className='divinfosabordagens'>
+                                        <label className='infosespecialidades'>"Nossa metodologia se baseia na abordagem transdisciplinar holística e se diferencia pelo processo do Cuidado Integral. Essa abordagem alia o método analítico ao sintético, orientando-se por uma cartografia vasta e inclusiva da totalidade humana, na tarefa de desenvolver uma Terapia da Inteireza que alia o pré-pessoal ao pessoal e ao transpessoal."
+                                        </label> 
+                                    </div>
+                                    </div>
+                                </div>
+                            )}
+
+                            <div className='divclicavel' onClick={() => setPopupAberto('aee')}>
+                                <label  className='tituloitemabordagens'>Atendimento Educacional Especializado</label>
+                            </div>
+                            
+                            {popupAberto === 'aee' && (
+                            <div ref={popupRef} className={`divclicada 
+                            ${popupAnimando ? 'popup-ativa' : ''} 
+                            ${popupFechando ? 'saindo' : ''}`}>                                    <div>
+                                    <label className='tituloitemabordagensclicada'>Atendimento Educacional Especializado</label>
+                                    <div className='divinfosabordagens'>
+                                        <label className='infosespecialidades'>"O AEE é um serviço que identifica, elabora e organiza recursos pedagógicos e de acessibilidade para eliminar as barreiras para a plena participação dos alunos."
+                                        </label> 
+                                    </div>
+                                    </div>
+                                </div>
+                            )}
+
+                            
                         </div>
                     </div>
                 </section>
@@ -347,13 +353,13 @@ export default function Portfolio (){
                             <label className='titulofotos'>Nosso endereço de atendimento</label>
                             <img src={lugar} className='lugar'/>
                             <label className='titulofotos'>Espaço Bougainvillea</label>
-                            <label className='descfotos'>R. Eng. Luís Scala Júnior, 149 - Rudge Ramos, São Bernardo do Campo - SP, 09625-020</label>
+                            <a href='https://www.google.com/search?sca_esv=8f2d608cc335416a&hl=pt-BR&gl=br&output=search&kgmid=/g/11yd8lxyhr&q=Psicopedagoga+Rudge+Ramos+São+Bernardo+do+Campo+Beatriz+Castanho&shndl=30&source=sh/x/loc/act/m1/2&kgs=79bd9268d79bf61b' className='descfotos'>R. Eng. Luís Scala Júnior, 149 - Rudge Ramos, São Bernardo do Campo - SP, 09625-020</a>
 
                             <div className='divfotobia'>
                                 <img src={bia} className='bia'/>
                                 <div className='divtextofotobia'>
                                     <label className='titulofotos'>Bia Castanho</label>
-                                    <label className='descfotos'>Psicopedagoga com vasto caminhar entre saberes e afetos, guiada pela sensibilidade e pela escuta profunda. Com olhar atento, dedica-se a revelar os potenciais únicos de cada criança e jovem, cuidando do desabrochar de potenciais adormecidos. Une conhecimento e intuição para acender caminhos de autoconhecimento, confiança e leveza, onde cada passo é semente, e cada conquista, flor.</label>
+                                    <label className='descfotos'>Psicopedagoga com vasto caminhar entre saberes e afetos, guiada pela sensibilidade e pela escuta profunda. Com olhar atento, dedica-se a revelar os potenciais únicos de cada criança e jovem, cuidando do desabrochar de potenciais adormecidos. Une conhecimento e intuição para acender caminhos de autoconhecimento, confiança e leveza, onde cada passo é semente, e cada conquista: Uma flor.</label>
                                 </div>
                             </div>
                         </div>

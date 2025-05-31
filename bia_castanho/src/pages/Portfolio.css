@@ -169,7 +169,7 @@ section {
 }
 
 .divclicavel{
-    max-width: 1155.47px;
+    max-width: 90%;
     display: flex;
     justify-content: center; 
     padding: 10px;
@@ -187,8 +187,7 @@ section {
 
 .divclicada {
   position: relative; /* não é mais fixed */
-  max-width: 1043px;
-  width: 100%;
+  max-width: 90%;
   background: #FFFFFF;
   box-shadow: 0px 4px 30.4px rgba(0, 0, 0, 0.25);
   border-radius: 23px;
@@ -478,7 +477,7 @@ section {
 
     .divtextofotobia{
         width: 100%;
-        height: 1000px;
+        height: 500px;
     }
 
     .titulocontato2{
@@ -544,7 +543,7 @@ section {
     }
 
     .divclicavel{
-            width: 100%;
+        width: 100%;
     }
 
     .divexperiencia{
