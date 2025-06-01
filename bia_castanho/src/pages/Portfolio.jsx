@@ -213,14 +213,14 @@ export default function Portfolio (){
                             <label className='tituloabordagens'>Abordagens</label>
 
                             <div className='divclicavel' onClick={() => setPopupAberto('psicopedagogo')}>
-                                <label  className='tituloitemabordagens'>Psicopedagoga</label>
+                                <label  className='tituloitemabordagens'>Psicopedagogia</label>
                             </div>
                             
                             {popupAberto === 'psicopedagogo' && (
                             <div ref={popupRef} className={`divclicada 
                             ${popupAnimando ? 'popup-ativa' : ''} 
                             ${popupFechando ? 'saindo' : ''}`}>                                    <div>
-                                    <label className='tituloitemabordagensclicada'>Psicopedagoga</label>
+                                    <label className='tituloitemabordagensclicada'>Psicopedagogia</label>
                                     <div className='divinfosabordagens'>
                                         <label className='infosespecialidades'>"Psicopedagogo analisa e intervém em processos de ensino-aprendizagem, com o objetivo de otimizar o aprendizado. 
                                         </label> 
@@ -326,8 +326,8 @@ export default function Portfolio (){
                     <div>
                         <img src={flores} className='flores'/>
                         <div className='textocont'>
-                            <label className='titulocontato'>Transforme dificuldades em aprendizagens</label>
-                            <label className='titulocontato2'>Contate-nos</label>
+                            <label className='titulocontato'>Transforme dificuldades em aprendizagens!</label>
+                            <label className='titulocontato2'>Contate-nos!</label>
                         </div>
 
                         <div className='contatocont'> 
