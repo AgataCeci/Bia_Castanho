@@ -154,14 +154,14 @@ export default function Portfolio (){
                             <label className='tituloetapas'>Etapas</label>
 
                             <div className='divclicavel' onClick={() => setPopupAberto('avaliacao')}>
-                                <label className='tituloitemetapas'>Avaliação diegnóstica</label>
+                                <label className='tituloitemetapas'>Avaliação diagnóstica</label>
                             </div>
                             
                             {popupAberto === 'avaliacao' && (
                             <div ref={popupRef} className={`divclicada 
                             ${popupAnimando ? 'popup-ativa' : ''} 
                             ${popupFechando ? 'saindo' : ''}`}>                                    <div>
-                                    <label className='tituloitemetapasclicada'>Avaliação diegnóstica</label>
+                                    <label className='tituloitemetapasclicada'>Avaliação diagnóstica</label>
                                     <div className='divinfosetapas'>
                                         <label className='infosespecialidades'>"Com base no conhecimento e funcionamento cerebral e sua repercussão cognitiva, através do diagnóstico psicopedagógico podemos mapear o nível de aquisição das competências mentais necessárias ao processamento dos conteúdos escolares."
                                         </label> 
