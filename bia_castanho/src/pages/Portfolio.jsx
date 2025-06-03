@@ -161,7 +161,7 @@ export default function Portfolio (){
                             <div ref={popupRef} className={`divclicada 
                             ${popupAnimando ? 'popup-ativa' : ''} 
                             ${popupFechando ? 'saindo' : ''}`}>                                    <div>
-                                    <label className='tituloitemetapasclicada'>Avaliação diagnóstica</label>
+                                    <label className='tituloitemetapasclicada'>Avaliação diacomignóstica</label>
                                     <div className='divinfosetapas'>
                                         <label className='infosespecialidades'>"Com base no conhecimento e funcionamento cerebral e sua repercussão cognitiva, através do diagnóstico psicopedagógico podemos mapear o nível de aquisição das competências mentais necessárias ao processamento dos conteúdos escolares."
                                         </label> 
